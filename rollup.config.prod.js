@@ -16,7 +16,6 @@ export default [
         format: 'umd',
         name: config.globals.core,
         banner: config.banners.find(({ base }) => base === `${pkg.lib.file}.umd.es5.js`).template,
-        compact: true,
         strict: false,
       },
       {
@@ -25,7 +24,6 @@ export default [
         name: config.globals.core,
         banner: config.banners.find(({ base }) => base === `${pkg.lib.file}.umd.es5.min.js`).template,
         plugins: [terser()],
-        compact: true,
         strict: false,
       },
     ],
