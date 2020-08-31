@@ -29,8 +29,7 @@
   "scripts": {
     "dev": "gulp dev --env=development",
     "build": "gulp build --env=production",
-    "prepare": "gulp prepare",
-    "publish": "yarn build && npm login && npm publish"
+    "prepare": "gulp prepare"
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
