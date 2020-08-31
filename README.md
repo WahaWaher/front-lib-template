@@ -13,8 +13,12 @@ cd library-name
 yarn
 ```
 
-#### 3. Fill package.json (name, description, lib, etc.)
-#### 4. Dev, Build, Publish!
+#### 3. Be sure to fill/edit package.json (fields: name, varsion, description, lib, etc.)
+#### 4. Run once "prepare" script
+```bash
+yarn prepare # will replace strings, rename some files and clear some dirs
+```
+#### 5. Dev, Build, Publish!
 ```bash
 yarn dev # run development server (by default url: http://localhost:3000, dir: './dev')
 yarn build # make production build (by default dir: './build')

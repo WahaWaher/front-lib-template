@@ -5,6 +5,7 @@ const { scripts } = require('./tasks/scripts');
 const { watcher } = require('./tasks/watch');
 const { server } = require('./tasks/server');
 const { clean } = require('./tasks/clean');
+const { replace } = require('./tasks/replace');
 // Config
 const { dev, build } = require('./config');
 
@@ -25,4 +26,13 @@ exports.dev = series(
 exports.build = series(
   clean.bind(null, [`${build}/**`]),
   parallel(scripts, styles),
+);
+
+/**
+ * Prepare files
+ * @cli yarn prepare
+ */
+exports.prepare = series(
+  replace,
+  clean.bind(null, [`${dev}/css/**`, `${dev}/js/**`, `${build}/**`]),
 );

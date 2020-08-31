@@ -1,6 +1,6 @@
 /*!
  * LibraryName — core ES5 scripts
- * Version: 0.9.0
+ * Version: 0.9.1
  * Repo: ...
  * Author: ...
  * Contacts: example@mail.com

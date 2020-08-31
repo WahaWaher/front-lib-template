@@ -1,6 +1,6 @@
 {
   "name": "front-lib-template",
-  "version": "0.9.1",
+  "version": "1.0.0",
   "description": "Simplify and speed up the process of creating frontend libraries, plugins, etc..",
   "lib": {
     "title": "LibraryName",
@@ -29,6 +29,7 @@
   "scripts": {
     "dev": "gulp dev --env=development",
     "build": "gulp build --env=production",
+    "prepare": "gulp prepare",
     "publish": "yarn build && npm login && npm publish"
   },
   "devDependencies": {
@@ -55,6 +56,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "node-sass": "^4.14.1",
     "postcss-sort-media-queries": "^1.7.26",
+    "replace-in-file": "^6.1.0",
     "rollup": "^2.26.8",
     "rollup-plugin-terser": "^7.0.1",
     "stream-combiner": "^0.2.2",
