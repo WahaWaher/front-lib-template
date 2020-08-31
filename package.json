@@ -1,7 +1,7 @@
 {
   "name": "front-lib-template",
-  "version": "0.9.0",
-  "description": "...",
+  "version": "0.9.1",
+  "description": "Simplify and speed up the process of creating frontend libraries, plugins, etc..",
   "lib": {
     "title": "LibraryName",
     "file": "libraryName",
