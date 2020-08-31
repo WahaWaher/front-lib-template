@@ -8,7 +8,7 @@ git clone https://github.com/WahaWaher/front-lib-template library-name
 cd library-name
 ```
 
-#### 2. Install, inicialize git
+#### 2. Install
 ```bash
 yarn
 ```
