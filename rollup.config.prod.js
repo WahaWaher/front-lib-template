@@ -16,6 +16,8 @@ export default [
         format: 'umd',
         name: config.globals.core,
         banner: config.banners.find(({ base }) => base === `${pkg.lib.file}.umd.es5.js`).template,
+        compact: true,
+        strict: false,
       },
       {
         file: `${config.build}/${pkg.lib.file}.umd.es5.min.js`,
@@ -23,6 +25,8 @@ export default [
         name: config.globals.core,
         banner: config.banners.find(({ base }) => base === `${pkg.lib.file}.umd.es5.min.js`).template,
         plugins: [terser()],
+        compact: true,
+        strict: false,
       },
     ],
     plugins: [
@@ -38,6 +42,6 @@ export default [
         __labraryGlobal__: pkg.lib.global,
       })
     ],
-    cache: true,
+    cache: false,
   },
 ];

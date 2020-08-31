@@ -15,6 +15,8 @@ export default [
         format: 'umd',
         name: config.globals.core,
         plugins: [],
+        compact: true,
+        strict: false,
       },
     ],
     plugins: [
@@ -31,5 +33,9 @@ export default [
       })
     ],
     cache: true,
+    watch: {
+      chokidar: true,
+      include: 'src/**/*',
+    },
   },
 ];

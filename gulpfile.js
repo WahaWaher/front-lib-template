@@ -30,9 +30,9 @@ exports.build = series(
 
 /**
  * Prepare files
- * @cli yarn prepare
+ * @cli yarn first
  */
-exports.prepare = series(
+exports.first = series(
   replace,
   clean.bind(null, [`${dev}/css/**`, `${dev}/js/**`, `${build}/**`]),
 );
