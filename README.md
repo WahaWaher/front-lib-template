@@ -14,9 +14,9 @@ yarn
 ```
 
 #### 3. Be sure to fill/edit package.json (fields: name, version, description, lib, etc.)
-#### 4. Run once "prepare" script
+#### 4. Run once "first" script
 ```bash
-yarn prepare # will replace strings, rename some files and clear some dirs
+yarn first # will replace strings, rename some files and clear some dirs
 ```
 #### 5. Dev and Build!
 ```bash
